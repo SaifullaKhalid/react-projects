@@ -1,1 +1,5 @@
 npm run Start
+git add .
+git status
+git commit -m 'Clock app'
+git  push
