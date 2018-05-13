@@ -1,10 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+class Cartoon extends React.Component{
 
-function Cartoon(props){
-  return <h1> Hello , {props.name}</h1>
+ render(){
+    return <h1>Hello, {this.props.name}</h1>
+ }
+
 }
+
 ReactDOM.render(
  <Cartoon name='saif'/>,
 document.getElementById('root')
