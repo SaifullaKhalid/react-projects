@@ -1,10 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+let obj = {
+fname:'saifulla',
+lname:'khalid'
 
-setInterval(function(){
+}
+
+
 ReactDOM.render(
-<h2>{new Date().toLocaleTimeString()}</h2>,
+<h1>Welcome {obj.fname} {obj.lname} to React Learning!</h1>,
+
 document.getElementById('root')
 );
-},1000);
