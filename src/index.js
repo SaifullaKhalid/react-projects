@@ -1,15 +1,19 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-class Cartoon extends React.Component{
 
- render(){
-    return <h1>Hello, {this.props.name}</h1>
- }
+function Cartoon(props){
+  return <h1> Hello , {props.name} on {props.show}</h1>
+}
 
+function Show(){
+  return <div>
+ <Cartoon name='Saif' show='Khalid' />,
+ <Cartoon name='Jasmin' show='Aladin' />,
+ </div>
 }
 
 ReactDOM.render(
- <Cartoon name='saif'/>,
+<Show/>,
 document.getElementById('root')
 );
